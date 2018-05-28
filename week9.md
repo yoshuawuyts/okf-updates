@@ -8,3 +8,4 @@
 ## What's blocking you?
 
 ## This Week's Video Archives
+Didn't live stream this week.
