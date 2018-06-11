@@ -1,0 +1,6 @@
+#!/bin/bash
+set -ex
+
+curr_week="$(date +%g)"
+proj_week="$(echo "$curr_week - 7" | bc)"
+cp template.md "week$proj_week.md"
