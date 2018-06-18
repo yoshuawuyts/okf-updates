@@ -2,5 +2,5 @@
 set -ex
 
 curr_week="$(date +%g)"
-proj_week="$(echo "$curr_week - 7" | bc)"
+proj_week="$(echo "$curr_week - 6" | bc)"
 cp template.md "week$proj_week.md"
