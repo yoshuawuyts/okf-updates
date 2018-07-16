@@ -1,6 +1,8 @@
 #!/bin/bash
-set -ex
+set -e
 
-curr_week="$(date +%g)"
-proj_week="$(echo "$curr_week - 6" | bc)"
-cp template.md "week$proj_week.md"
+curr="$(ls | tail -n1 | sed 's/\.md//' | sed 's/week//')"
+week="$(echo "$curr+1" | bc)"
+
+echo "week$week.md"
+cp template.md "week$week.md"
